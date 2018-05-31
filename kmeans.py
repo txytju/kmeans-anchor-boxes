@@ -3,6 +3,7 @@ import numpy as np
 
 def iou(box, clusters):
     """
+    约定所有的 clusters 和 box 都是左上角位于原点的。
     Calculates the Intersection over Union (IoU) between a box and k clusters.
     :param box: tuple or array, shifted to the origin (i. e. width and height)
     :param clusters: numpy array of shape (k, 2) where k is the number of clusters
